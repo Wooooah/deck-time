@@ -83,7 +83,6 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("cardDisplay").innerHTML = `
                 <h2>Deck Empty</h2>
                 <p>Reset the deck to continue.</p>
-            `;
 
             return;
         }
