@@ -8,7 +8,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -18,7 +18,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -28,7 +28,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -38,7 +38,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -48,7 +48,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -58,7 +58,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -68,7 +68,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -78,7 +78,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -88,7 +88,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -98,7 +98,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -108,7 +108,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -118,7 +118,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -128,7 +128,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -138,7 +138,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -148,7 +148,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -158,7 +158,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -168,7 +168,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -178,7 +178,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -188,7 +188,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -198,7 +198,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -208,7 +208,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -218,7 +218,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -228,7 +228,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -238,7 +238,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
@@ -248,7 +248,7 @@ const cards = [
     {
         name: "Chemical Feed",
         description: "How would you verify the feed rate?"
-    }
+    },
 
     {
         name: "Pump Failure",
