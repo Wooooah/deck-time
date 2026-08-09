@@ -73,7 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
     function createDeck() {
 
         deck = [...cards];
-
         updateCardsRemaining();
     }
 
