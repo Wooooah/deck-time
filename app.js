@@ -1,19 +1,27 @@
-let duration = 600; // 10 minutes in seconds
+let duration = 600;
 let timeRemaining = duration;
 let timerInterval = null;
+
+const timerDisplay = document.getElementById("timer");
+const startBtn = document.getElementById("startBtn");
+const resetBtn = document.getElementById("resetBtn");
 
 function updateDisplay() {
     const minutes = Math.floor(timeRemaining / 60);
     const seconds = timeRemaining % 60;
 
-    document.getElementById("timer").textContent =
-        `${minutes}:${seconds.toString().padStart(2, '0')}`;
+    timerDisplay.textContent =
+        `${minutes}:${seconds.toString().padStart(2, "0")}`;
 }
 
 function startTimer() {
-    if (timerInterval) return;
+
+    if (timerInterval !== null) {
+        return;
+    }
 
     timerInterval = setInterval(() => {
+
         timeRemaining--;
 
         updateDisplay();
@@ -23,15 +31,21 @@ function startTimer() {
             timerInterval = null;
             alert("Time is up!");
         }
+
     }, 1000);
 }
 
 function resetTimer() {
+
     clearInterval(timerInterval);
     timerInterval = null;
 
     timeRemaining = duration;
+
     updateDisplay();
 }
+
+startBtn.addEventListener("click", startTimer);
+resetBtn.addEventListener("click", resetTimer);
 
 updateDisplay();
