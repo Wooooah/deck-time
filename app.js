@@ -76,28 +76,25 @@ document.addEventListener("DOMContentLoaded", () => {
         updateCardsRemaining();
     }
 
-    function drawCard() {
+   function drawCard() {
 
-        if (deck.length === 0) {
+    if (deck.length === 0) {
 
-            document.getElementById("cardDisplay").innerHTML = `
-                <h2>Deck Empty</h2>
-                <p>Reset the deck to continue.</p>
+        document.getElementById("cardDisplay").innerHTML =
+            "<h2>Deck Empty</h2><p>Reset the deck to continue.</p>";
 
-            return;
-        }
-
-        const randomIndex = Math.floor(Math.random() * deck.length);
-
-        const card = deck.splice(randomIndex, 1)[0];
-
-        document.getElementById("cardDisplay").innerHTML = `
-            <h2>${card.name}</h2>
-            <p>${card.description}</p>
-        `;
-
-        updateCardsRemaining();
+        return;
     }
+
+    const randomIndex = Math.floor(Math.random() * deck.length);
+
+    const card = deck.splice(randomIndex, 1)[0];
+
+    document.getElementById("cardDisplay").innerHTML =
+        "<h2>" + card.name + "</h2><p>" + card.description + "</p>";
+
+    updateCardsRemaining();
+}
 
     function resetDeck() {
 
@@ -105,8 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         document.getElementById("cardDisplay").innerHTML = `
             <h2>Deck Reset</h2>
-            <p>52 cards ready to draw.</p>
-        `;
+            "<p>52 cards ready to draw.</p>";
     }
 
     document
