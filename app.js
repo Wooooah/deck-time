@@ -1,45 +1,46 @@
-let duration = 600;
-let timeRemaining = duration;
-let timerInterval = null;
+document.addEventListener("DOMContentLoaded", () => {
 
-const timerDisplay = document.getElementById("timer");
-const startBtn = document.getElementById("startBtn");
-const resetBtn = document.getElementById("resetBtn");
+    let duration = 600;
+    let timeRemaining = duration;
+    let timerInterval = null;
 
-function updateDisplay() {
-    const minutes = Math.floor(timeRemaining / 60);
-    const seconds = timeRemaining % 60;
+    const timerDisplay = document.getElementById("timer");
+    const startBtn = document.getElementById("startBtn");
+    const resetBtn = document.getElementById("resetBtn");
 
-    timerDisplay.textContent =
-        `${minutes}:${seconds.toString().padStart(2, "0")}`;
-}
+    function updateDisplay() {
+        const minutes = Math.floor(timeRemaining / 60);
+        const seconds = timeRemaining % 60;
 
-function startTimer() {
-    if (timerInterval) return;
+        timerDisplay.textContent =
+            `${minutes}:${seconds.toString().padStart(2, "0")}`;
+    }
 
-    timerInterval = setInterval(() => {
-        timeRemaining--;
+    function startTimer() {
+        if (timerInterval) return;
 
+        timerInterval = setInterval(() => {
+            timeRemaining--;
+
+            updateDisplay();
+
+            if (timeRemaining <= 0) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+                alert("Time is up!");
+            }
+        }, 1000);
+    }
+
+    function resetTimer() {
+        clearInterval(timerInterval);
+        timerInterval = null;
+        timeRemaining = duration;
         updateDisplay();
+    }
 
-        if (timeRemaining <= 0) {
-            clearInterval(timerInterval);
-            timerInterval = null;
-            alert("Time is up!");
-        }
-    }, 1000);
-}
+    startBtn.addEventListener("click", startTimer);
+    resetBtn.addEventListener("click", resetTimer);
 
-function resetTimer() {
-    clearInterval(timerInterval);
-    timerInterval = null;
-
-    timeRemaining = duration;
     updateDisplay();
-}
-
-startBtn.addEventListener("click", startTimer);
-resetBtn.addEventListener("click", resetTimer);
-
-updateDisplay();
-`
+});
