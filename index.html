@@ -3,27 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web App</title>
+    <title>Deck Timer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
+
         <div class="main-content">
-            <h1>My Web App</h1>
+
+            <h1>Deck Timer</h1>
+
+            <div class="deck-section">
+
+                <button id="drawCardBtn">Draw Card</button>
+                <button id="resetDeckBtn">Reset Deck</button>
+
+                <p>Cards Remaining: <span id="cardsRemaining">52</span></p>
+
+                <div id="cardDisplay" class="playing-card">
+                    <h2>Draw a Card</h2>
+                    <p>Click Draw Card to begin.</p>
+                </div>
+
+            </div>
+
         </div>
 
         <div class="timer-panel">
+
+            <h2>Timer</h2>
+
             <div id="timer">10:00</div>
 
             <button id="startBtn">Start</button>
-            <button id="resetBtn">Reset</button>
             <button id="pauseBtn">Pause</button>
+            <button id="resetBtn">Reset</button>
+
         </div>
+
     </div>
 
     <script src="app.js">
-        
 </script>
 </body>
 </html>
