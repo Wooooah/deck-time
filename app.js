@@ -15,13 +15,9 @@ function updateDisplay() {
 }
 
 function startTimer() {
-
-    if (timerInterval !== null) {
-        return;
-    }
+    if (timerInterval) return;
 
     timerInterval = setInterval(() => {
-
         timeRemaining--;
 
         updateDisplay();
@@ -31,17 +27,14 @@ function startTimer() {
             timerInterval = null;
             alert("Time is up!");
         }
-
     }, 1000);
 }
 
 function resetTimer() {
-
     clearInterval(timerInterval);
     timerInterval = null;
 
     timeRemaining = duration;
-
     updateDisplay();
 }
 
@@ -49,3 +42,4 @@ startBtn.addEventListener("click", startTimer);
 resetBtn.addEventListener("click", resetTimer);
 
 updateDisplay();
+`
