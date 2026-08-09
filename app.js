@@ -72,14 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function createDeck() {
 
-        deck = [];
-
-        for (let i = 1; i <= 52; i++) {
-
-            deck.push({
-                name: `Card ${i}`,
-                description: `Placeholder description for card ${i}.`
-            });
+        deck = [...cards];
 
         }
 
