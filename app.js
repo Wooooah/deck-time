@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const timerDisplay = document.getElementById("timer");
     const startBtn = document.getElementById("startBtn");
     const resetBtn = document.getElementById("resetBtn");
+    const pauseBtn = document.getElementById("pauseBtn");
 
     function updateDisplay() {
         const minutes = Math.floor(timeRemaining / 60);
@@ -38,9 +39,14 @@ document.addEventListener("DOMContentLoaded", () => {
         timeRemaining = duration;
         updateDisplay();
     }
+    function pauseTimer() {
+    clearInterval(timerInterval);
+    timerInterval = null;
+    }
 
     startBtn.addEventListener("click", startTimer);
     resetBtn.addEventListener("click", resetTimer);
+    pauseBtn.addEventListener("click", pauseTimer);
 
     updateDisplay();
 });
