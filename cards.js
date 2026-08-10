@@ -191,8 +191,8 @@ const cards = [
     },
 
     {
-        name: "Pump Failure",
-        description: "Describe the immediate operator response."
+        name: "Tyet Item",
+        description: "Skip a Action Card Effect"
     },
 
     {
