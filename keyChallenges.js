@@ -15,6 +15,7 @@ const keyChallenges = [
         name: "Shuyet Key",
         description: "Roll a dice to determine which levels stair square the key starts on. After 3 rounds the roll the dice again. Move the key to that levels stair square. After the key has moved 2 times the key will disapear after 3 turns for good. Land on the same square or move past the key square to get the key."
     },
+    {
         name: "Horus's Falcon",
         description: "Roll a dice and place the falcon on the stair of the floor matching the number rolled. Land on the same square to catch the falcon and get the key. Every turn the falcon moves counter clockwise 1 corner. When moving if he contacts a player that player loses all their die. If the falcon contacts 2 players he will disappear."
     },
