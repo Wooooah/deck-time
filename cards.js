@@ -92,7 +92,7 @@ const cards = [
 
     {
         name: "Pharoah's Curse",
-        description: "Describe the immediate operator response."
+        description: "Loss all your die unless the eye of horus is played."
     },
 
     {
@@ -241,22 +241,22 @@ const cards = [
     },
 
     {
-        name: "Pump Failure",
-        description: "Describe the immediate operator response."
+        name: "First Aid Kit",
+        description: "Heal any player 1 die or illness."
     },
 
     {
-        name: "Chemical Feed",
-        description: "How would you verify the feed rate?"
+        name: "First Aid Kit",
+        description: "Heal any player 1 die or illness."
     },
 
     {
-        name: "Pump Failure",
-        description: "Describe the immediate operator response."
+        name: "Smugglers bottle",
+        description: "Roll a die if you get 4 or higher gain 1 die."
     },
 
     {
-        name: "Chemical Feed",
-        description: "How would you verify the feed rate?"
+        name: "Smugglers bottle",
+        description: "Roll a die if you get 4 or higher gain 1 die."
     }
 ];
